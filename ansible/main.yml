@@ -1,0 +1,16 @@
+---
+- name: "Install and Configure Nginx"
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  pre_tasks:
+  - name: Update repository list
+    raw: apt-get update
+
+  - name: Install python3
+    raw: apt-get install python3
+
+  roles:
+    - nginx
+

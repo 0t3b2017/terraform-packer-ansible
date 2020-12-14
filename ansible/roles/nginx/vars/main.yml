@@ -1,0 +1,11 @@
+---
+# vars file for nginx
+#- include: nginx_vars.yml
+#worker_processes: "4"
+#user: "www-data"
+worker_processes: "4"
+user: "www-data"
+title_text: "MyAutoApp"
+h1_text: "This website was automated deployed using Packer, Ansible and Terraform"
+
+
